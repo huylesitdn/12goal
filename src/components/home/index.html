@@ -1,0 +1,46 @@
+<div class="top-home" data-aos="fade-up">
+  <div data-i18n="home_page.12Goal_Event"></div>
+  <div class="d-flex align-items-center gap-2">
+    <span data-i18n="home_page.Up_To"></span>
+    <span class="top-home__title">USD 10,000</span>
+  </div>
+  <div class="top-home__subtitle" data-i18n="home_page.Cash_To_Win"></div>
+</div>
+
+<div data-aos="fade-up" data-aos-delay="100">
+  <ul class="nav nav-tabs nav-fill" id="myHomeGoalTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="goal-home-current-tab" data-bs-toggle="tab" data-bs-target="#goal-home-current" type="button" role="tab" aria-controls="goal-home-current" aria-selected="true">
+        <span data-i18n="home_page.Current"></span>
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="goal-home-previous-tab" data-bs-toggle="tab" data-bs-target="#goal-home-previous" type="button" role="tab" aria-controls="goal-home-previous" aria-selected="false">
+        <span data-i18n="home_page.Previous"></span>
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="goal-home-leaderboard-tab" data-bs-toggle="tab" data-bs-target="#goal-home-leaderboard" type="button" role="tab" aria-controls="goal-home-leaderboard" aria-selected="false">
+        <span data-i18n="home_page.Leaderboard"></span>
+      </button>
+    </li>
+    <li class="nav-item disabled" role="presentation">
+      <button class="nav-link disabled" id="goal-home-ticket-balance-tab" data-bs-toggle="tab" data-bs-target="#goal-home-ticket-balance" type="button" role="tab" aria-controls="goal-home-ticket-balance" aria-selected="false">
+        <span data-i18n="home_page.Ticket_Balance"></span>
+      </button>
+    </li>
+  </ul>
+</div>
+
+<div class="tab-content" id="myHomeGoalTabContent">
+  <div class="tab-pane fade show active" id="goal-home-current" role="tabpanel" aria-labelledby="goal-home-current-tab">
+    <!-- goal-home-current -->
+    @@include('./goal-home-current.html') 
+  </div>
+  <div class="tab-pane fade" id="goal-home-previous" role="tabpanel" aria-labelledby="goal-home-previous-tab">
+    goal-home-previous
+  </div>
+  <div class="tab-pane fade" id="goal-home-leaderboard" role="tabpanel" aria-labelledby="goal-home-leaderboard-tab">
+    goal-home-leaderboard
+  </div>
+</div>

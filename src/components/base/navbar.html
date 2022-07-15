@@ -1,0 +1,47 @@
+<nav class="navbar fixed-top navbar-light">
+  <div class="container-fluid content">
+    <div>
+      <button class="btn" id="navMenu">
+        <img src="assets/icons/menu.svg" alt="" />
+      </button>
+    </div>
+    <div>
+      @@if (!!context.without_login) {
+        <a href="/home-without-login.html">
+          <img class="content__logo" src="assets/icons/logo.png" alt="" />
+        </a>
+      }
+      @@if (!context.without_login) {
+        <a href="/">
+          <img class="content__logo" src="assets/icons/logo.png" alt="" />
+        </a>
+      }
+      <button type="button" class="btn btn-wallet" data-i18n="WALLET"></button>
+      <!-- @@if (!context.without_login) {
+        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+          <a href="/deposit.html" class="btn btn-secondary btn-currency">
+            <img class="content__logo" src="assets/icons/navbar-wallet.svg" alt="" />
+            <span>SGD 5,000,000</span>
+          </a>
+          <a href="/deposit.html" class="btn btn-warning btn-add">
+            <img class="content__logo" src="assets/icons/navbar-plus.svg" alt="" />
+          </a>
+        </div>
+      }
+      @@if (!!context.without_login) {
+        <a href="/login.html" class="btn btn-warning btn-login">
+          <div>
+            <img src="assets/icons/user-black.svg" alt="" />
+            <span data-i18n="Login_Register"></span>
+          </div>
+        </a>
+      } -->
+    </div>
+  </div>
+</nav>
+@@if (!!context.without_login) {
+  @@include('./sidebar-without-login.html')
+}
+@@if (!context.without_login) {
+  @@include('./sidebar.html')
+}

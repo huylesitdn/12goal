@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Home'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main home">
+      @@include('../components/base/navbar.html')
+      <div class="home__content">
+
+        <ul class="nav nav-tabs" id="myHomeTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="goal-home-tab" data-bs-toggle="tab" data-bs-target="#goal-home" type="button" role="tab" aria-controls="goal-home" aria-selected="true" data-i18n="home_page.12GOAL" data-aos="fade-in"></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="live-score-home-tab" data-bs-toggle="tab" data-bs-target="#live-score-home" type="button" role="tab" aria-controls="live-score-home" aria-selected="false" data-i18n="home_page.LIVE_SCORE" data-aos="fade-in"></button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myHomeTabContent">
+          <div class="tab-pane fade show active" id="goal-home" role="tabpanel" aria-labelledby="goal-home-tab">
+            @@include('../components/home/index.html') 
+          </div>
+          <div class="tab-pane fade" id="live-score-home" role="tabpanel" aria-labelledby="live-score-home-tab">
+            LIVE SCORE
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- MODAL -->
+      
+      <!-- MODAL -->
+      
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>
