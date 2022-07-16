@@ -687,6 +687,8 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
+  .predict .navbar.fixed-top .title {
+    text-transform: initial; }
   .predict__content {
     padding-top: 28px;
     padding-bottom: 28px; }
