@@ -94,7 +94,7 @@ img {
 .main {
   margin-top: 50px;
   margin-bottom: 0;
-  min-height: calc(100vh - 50px - 0); }
+  min-height: calc(100vh - 50px); }
 
 a {
   color: #597EF7;
@@ -270,11 +270,21 @@ a {
   max-width: 350px;
   margin: auto; }
   .modal.alert .modal-dialog .modal-content {
-    background: #19264B;
-    border-radius: 16px;
+    background-image: url(../images/popup-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
     padding: 30px; }
     .modal.alert .modal-dialog .modal-content .modal-body {
       padding: 0; }
+      .modal.alert .modal-dialog .modal-content .modal-body h5 {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 35px; }
       .modal.alert .modal-dialog .modal-content .modal-body .text {
         font-weight: 400;
         font-size: 14px;
@@ -295,13 +305,25 @@ a {
         gap: 10px; }
         .modal.alert .modal-dialog .modal-content .modal-body .action .btn {
           font-weight: 700;
-          font-size: 14px;
-          line-height: 19px;
+          font-size: 15px;
+          line-height: 18px;
           text-align: center;
-          height: 40px;
+          min-width: 118px;
+          height: 36px;
           display: flex;
           place-content: center;
           place-items: center; }
+          .modal.alert .modal-dialog .modal-content .modal-body .action .btn-light {
+            background: #AAAAAA;
+            border: none;
+            border-radius: 6px;
+            color: #FFFFFF; }
+          .modal.alert .modal-dialog .modal-content .modal-body .action .btn-danger {
+            border: none;
+            background: linear-gradient(180deg, #980000 0%, #4C0000 100%);
+            box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.3);
+            border-radius: 6px;
+            color: #FFFFFF; }
 
 .hide-scrollbar {
   -ms-overflow-style: none;

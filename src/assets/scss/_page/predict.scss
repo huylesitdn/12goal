@@ -1,0 +1,92 @@
+.predict {
+  background: #010046;
+  background-image: url(../images/predict-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__content {
+    padding-top: 28px;
+    padding-bottom: 28px;
+
+    .btn-submit {
+      background: linear-gradient(180deg, #980000 0%, #4C0000 100%);
+      border-radius: 6px;
+      min-height: 40px;
+      width: 100%;
+    }
+
+    &__question {
+      background: #F3F5F6;
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+      margin-bottom: 15px;
+      padding: 17px 10px;
+
+      &__title {
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 15px;
+        color: #000000;
+      }
+
+      &__answers {
+        padding-top: 13px;
+        width: 100%;
+
+        .btn-check {
+          &:checked+.btn {
+            border-color: #12CB59;
+
+            &:after {
+              opacity: 1;
+            }
+          }
+
+          &:focus+.btn:focus,
+          &:focus+.btn {
+            box-shadow: none;
+          }
+        }
+
+        label {
+          font-weight: 800;
+          font-size: 14px;
+          line-height: 15px;
+          color: #000000;
+          min-height: 35px;
+          background: #FFFFFF;
+          border-radius: 6px !important;
+          margin-bottom: 5px;
+          padding: 10px;
+          display: flex;
+          place-content: flex-start;
+          place-items: center;
+          transition: 0.3s;
+          position: relative;
+          border: 1.5px solid transition;
+
+          &:focus {
+            box-shadow: none;
+          }
+
+          &:last-child {
+            margin-bottom: 0 !important;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            background-image: url(../icons/check-success.svg);
+            background-size: 18px;
+            width: 18px;
+            height: 18px;
+            right: 10px;
+            opacity: 0;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+}

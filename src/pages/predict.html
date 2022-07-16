@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="">
+  @@include('../components/base/header.html', {title: 'Predict'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main predict">
+      @@include('../components/base/navbar-top.html', {title: 'predict_page.title', back_url: '/', icon_back_white: true})
+
+      <form id="predictForm" class="predict__content container-fluid">
+
+        <div class="predict__content__question" data-aos="fade-in">
+          <div class="predict__content__question__title" data-i18n="predict_page.question1"></div>
+          <div class="predict__content__question__answers btn-group btn-group-vertical" role="group">
+            <input type="radio" class="btn-check" name="answer1" id="answer1_1" autocomplete="off">
+            <label class="btn btn-outline-default" for="answer1_1" data-i18n="predict_page.answer1_1"></label>
+          
+            <input type="radio" class="btn-check" name="answer1" id="answer1_2" autocomplete="off">
+            <label class="btn btn-outline-default" for="answer1_2" data-i18n="predict_page.answer1_2"></label>
+          
+            <input type="radio" class="btn-check" name="answer1" id="answer1_3" autocomplete="off">
+            <label class="btn btn-outline-default" for="answer1_3" data-i18n="predict_page.answer1_3"></label>
+          </div>
+        </div>
+        
+        <div class="predict__content__question" data-aos="fade-up">
+          <div class="predict__content__question__title" data-i18n="predict_page.question2"></div>
+          <div class="predict__content__question__answers btn-group btn-group-vertical" role="group">
+            <input type="radio" class="btn-check" name="answer2" id="answer2_1" autocomplete="off">
+            <label class="btn btn-outline-default" for="answer2_1" data-i18n="predict_page.answer1_1"></label>
+          
+            <input type="radio" class="btn-check" name="answer2" id="answer2_2" autocomplete="off">
+            <label class="btn btn-outline-default" for="answer2_2" data-i18n="predict_page.answer1_2"></label>
+          
+            <input type="radio" class="btn-check" name="answer2" id="answer2_3" autocomplete="off">
+            <label class="btn btn-outline-default" for="answer2_3" data-i18n="predict_page.answer1_3"></label>
+          </div>
+        </div>
+        
+        <div class="predict__content__question" data-aos="fade-up">
+          <div class="predict__content__question__title" data-i18n="predict_page.question3"></div>
+          <div class="predict__content__question__answers btn-group btn-group-vertical" role="group">
+            <input type="radio" class="btn-check" name="answer3" id="answer3_1" autocomplete="off">
+            <label class="btn btn-outline-default" for="answer3_1" data-i18n="predict_page.answer1_1"></label>
+          
+            <input type="radio" class="btn-check" name="answer3" id="answer3_2" autocomplete="off">
+            <label class="btn btn-outline-default" for="answer3_2" data-i18n="predict_page.answer1_2"></label>
+          
+            <input type="radio" class="btn-check" name="answer3" id="answer3_3" autocomplete="off">
+            <label class="btn btn-outline-default" for="answer3_3" data-i18n="predict_page.answer1_3"></label>
+          </div>
+        </div>
+        
+        <div class="predict__content__question" data-aos="fade-up">
+          <div class="predict__content__question__title" data-i18n="predict_page.question4"></div>
+          <div class="predict__content__question__answers btn-group btn-group-vertical" role="group">
+            <input type="radio" class="btn-check" name="answer4" id="answer4_1" autocomplete="off">
+            <label class="btn btn-outline-default" for="answer4_1" data-i18n="predict_page.answer1_1"></label>
+          
+            <input type="radio" class="btn-check" name="answer4" id="answer4_2" autocomplete="off">
+            <label class="btn btn-outline-default" for="answer4_2" data-i18n="predict_page.answer1_2"></label>
+          
+            <input type="radio" class="btn-check" name="answer4" id="answer4_3" autocomplete="off">
+            <label class="btn btn-outline-default" for="answer4_3" data-i18n="predict_page.answer1_3"></label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-danger btn-submit" data-i18n="predict_page.Submit" data-aos="fade-up"></button>
+        
+      </form>
+
+      <!-- MODAL -->
+      @@include('../components/predict-confirm-modal.html')
+      <!-- MODAL -->
+      
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

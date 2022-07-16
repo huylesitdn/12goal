@@ -161,6 +161,20 @@ $(document).ready(function () {
 
 function initialize () {
 
+  const predictConfirmModalElm = $("#predictConfirmModal");
+  if (predictConfirmModalElm.length > 0) {
+    var predictConfirmModal = new bootstrap.Modal(predictConfirmModalElm, {});
+  }
+
+
+
+  $('#predictForm').on('submit', function(e) {
+    e.preventDefault();
+    const form_data = $(this).serializeArray();
+    console.log('-=-=-form_data', form_data)
+    predictConfirmModal.show()
+  });
+
   console.log('initialize')
 
 }

@@ -93,7 +93,7 @@
         color: #FFFFFF;
         width: 110px; }
     .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTab > .nav-item.disabled {
-      flex: 1; }
+      flex: initial; }
   .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-current .partner {
     padding-top: 20px;
     display: flex;

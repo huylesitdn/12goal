@@ -4,7 +4,12 @@
   &.nav-child {
     background: #FFFFFF;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
-    min-height: 60px !important;
+    min-height: 50px !important;
+
+    .content {
+      padding-right: var(--bs-gutter-x, 0.75rem) !important;
+      padding-left: var(--bs-gutter-x, 0.75rem) !important;
+    }
 
     .title {
       font-weight: 700;
@@ -33,6 +38,13 @@
       min-height: 50px;
       padding-left: 0;
       padding-right: 0;
+
+      .content-logo {
+        min-width: 60%;
+        display: flex;
+        place-content: space-between;
+        place-items: center;
+      }
 
       .btn {
         min-width: auto;
@@ -104,7 +116,7 @@
       &__logo {
         max-width: 140px;
         max-height: 40px;
-        margin-right: 12px;
+        margin-right: 10px;
         // max-width: 145px;
         // margin-left: 45px;
       }

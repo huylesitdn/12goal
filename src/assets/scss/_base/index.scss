@@ -127,7 +127,7 @@ img {
 .main {
   margin-top: 50px;
   margin-bottom: 0;
-  min-height: calc(100vh - 50px - 0); // 70px: top nav height, 50px: bottom navbar
+  min-height: calc(100vh - 50px); // 70px: top nav height, 50px: bottom navbar
 }
 
 a {
@@ -392,12 +392,24 @@ a {
       margin: auto;
 
       .modal-content {
-        background: #19264B;
-        border-radius: 16px;
+        background-image: url(../images/popup-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
         padding: 30px;
 
         .modal-body {
           padding: 0;
+
+          h5 {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 35px;
+          }
 
           .text {
             font-weight: 400;
@@ -424,14 +436,30 @@ a {
 
             .btn {
               font-weight: 700;
-              font-size: 14px;
-              line-height: 19px;
+              font-size: 15px;
+              line-height: 18px;
               text-align: center;
 
-              height: 40px;
+              min-width: 118px;
+              height: 36px;
               display: flex;
               place-content: center;
               place-items: center;
+
+              &-light {
+                background: #AAAAAA;
+                border: none;
+                border-radius: 6px;
+                color: #FFFFFF;
+              }
+
+              &-danger {
+                border: none;
+                background: linear-gradient(180deg, #980000 0%, #4C0000 100%);
+                box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.3);
+                border-radius: 6px;
+                color: #FFFFFF;
+              }
             }
           }
         }

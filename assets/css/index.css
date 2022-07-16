@@ -95,7 +95,7 @@ img {
 .main {
   margin-top: 50px;
   margin-bottom: 0;
-  min-height: calc(100vh - 50px - 0); }
+  min-height: calc(100vh - 50px); }
 
 a {
   color: #597EF7;
@@ -271,11 +271,21 @@ a {
   max-width: 350px;
   margin: auto; }
   .modal.alert .modal-dialog .modal-content {
-    background: #19264B;
-    border-radius: 16px;
+    background-image: url(../images/popup-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
     padding: 30px; }
     .modal.alert .modal-dialog .modal-content .modal-body {
       padding: 0; }
+      .modal.alert .modal-dialog .modal-content .modal-body h5 {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 35px; }
       .modal.alert .modal-dialog .modal-content .modal-body .text {
         font-weight: 400;
         font-size: 14px;
@@ -296,13 +306,25 @@ a {
         gap: 10px; }
         .modal.alert .modal-dialog .modal-content .modal-body .action .btn {
           font-weight: 700;
-          font-size: 14px;
-          line-height: 19px;
+          font-size: 15px;
+          line-height: 18px;
           text-align: center;
-          height: 40px;
+          min-width: 118px;
+          height: 36px;
           display: flex;
           place-content: center;
           place-items: center; }
+          .modal.alert .modal-dialog .modal-content .modal-body .action .btn-light {
+            background: #AAAAAA;
+            border: none;
+            border-radius: 6px;
+            color: #FFFFFF; }
+          .modal.alert .modal-dialog .modal-content .modal-body .action .btn-danger {
+            border: none;
+            background: linear-gradient(180deg, #980000 0%, #4C0000 100%);
+            box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.3);
+            border-radius: 6px;
+            color: #FFFFFF; }
 
 .hide-scrollbar {
   -ms-overflow-style: none;
@@ -555,7 +577,7 @@ a {
         color: #FFFFFF;
         width: 110px; }
     .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTab > .nav-item.disabled {
-      flex: 1; }
+      flex: initial; }
   .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-current .partner {
     padding-top: 20px;
     display: flex;
@@ -658,3 +680,69 @@ a {
         line-height: 13px;
         color: #9D9D9D;
         padding: 10px 0 0; }
+
+.predict {
+  background: #010046;
+  background-image: url(../images/predict-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .predict__content {
+    padding-top: 28px;
+    padding-bottom: 28px; }
+    .predict__content .btn-submit {
+      background: linear-gradient(180deg, #980000 0%, #4C0000 100%);
+      border-radius: 6px;
+      min-height: 40px;
+      width: 100%; }
+    .predict__content__question {
+      background: #F3F5F6;
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+      margin-bottom: 15px;
+      padding: 17px 10px; }
+      .predict__content__question__title {
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 15px;
+        color: #000000; }
+      .predict__content__question__answers {
+        padding-top: 13px;
+        width: 100%; }
+        .predict__content__question__answers .btn-check:checked + .btn {
+          border-color: #12CB59; }
+          .predict__content__question__answers .btn-check:checked + .btn:after {
+            opacity: 1; }
+        .predict__content__question__answers .btn-check:focus + .btn:focus,
+        .predict__content__question__answers .btn-check:focus + .btn {
+          box-shadow: none; }
+        .predict__content__question__answers label {
+          font-weight: 800;
+          font-size: 14px;
+          line-height: 15px;
+          color: #000000;
+          min-height: 35px;
+          background: #FFFFFF;
+          border-radius: 6px !important;
+          margin-bottom: 5px;
+          padding: 10px;
+          display: flex;
+          place-content: flex-start;
+          place-items: center;
+          transition: 0.3s;
+          position: relative;
+          border: 1.5px solid transition; }
+          .predict__content__question__answers label:focus {
+            box-shadow: none; }
+          .predict__content__question__answers label:last-child {
+            margin-bottom: 0 !important; }
+          .predict__content__question__answers label::after {
+            content: "";
+            position: absolute;
+            background-image: url(../icons/check-success.svg);
+            background-size: 18px;
+            width: 18px;
+            height: 18px;
+            right: 10px;
+            opacity: 0;
+            transition: 0.3s; }
