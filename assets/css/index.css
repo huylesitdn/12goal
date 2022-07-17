@@ -596,7 +596,7 @@ a {
           .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-leaderboard .score .table-responsive .table thead tr th {
             position: sticky;
             top: 0;
-            z-index: 1;
+            z-index: 99;
             font-weight: 700;
             font-size: 12px;
             line-height: 13px;
