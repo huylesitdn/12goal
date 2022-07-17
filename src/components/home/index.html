@@ -10,12 +10,12 @@
 <div data-aos="fade-up" data-aos-delay="100">
   <ul class="nav nav-tabs nav-fill" id="myHomeGoalTab" role="tablist">
     <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="goal-home-current-tab" data-bs-toggle="tab" data-bs-target="#goal-home-current" type="button" role="tab" aria-controls="goal-home-current" aria-selected="true">
+      <button class="nav-link" id="goal-home-current-tab" data-bs-toggle="tab" data-bs-target="#goal-home-current" type="button" role="tab" aria-controls="goal-home-current" aria-selected="true">
         <span data-i18n="home_page.Current"></span>
       </button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="goal-home-previous-tab" data-bs-toggle="tab" data-bs-target="#goal-home-previous" type="button" role="tab" aria-controls="goal-home-previous" aria-selected="false">
+      <button class="nav-link active" id="goal-home-previous-tab" data-bs-toggle="tab" data-bs-target="#goal-home-previous" type="button" role="tab" aria-controls="goal-home-previous" aria-selected="false">
         <span data-i18n="home_page.Previous"></span>
       </button>
     </li>
@@ -33,12 +33,13 @@
 </div>
 
 <div class="tab-content" id="myHomeGoalTabContent">
-  <div class="tab-pane fade show active" id="goal-home-current" role="tabpanel" aria-labelledby="goal-home-current-tab">
+  <div class="tab-pane fade" id="goal-home-current" role="tabpanel" aria-labelledby="goal-home-current-tab">
     <!-- goal-home-current -->
-    @@include('./goal-home-current.html') 
+    @@include('./goal-home-current.html')
   </div>
-  <div class="tab-pane fade" id="goal-home-previous" role="tabpanel" aria-labelledby="goal-home-previous-tab">
-    goal-home-previous
+  <div class="tab-pane fade show active" id="goal-home-previous" role="tabpanel" aria-labelledby="goal-home-previous-tab">
+    <!-- goal-home-previous -->
+    @@include('./goal-home-previous.html')
   </div>
   <div class="tab-pane fade" id="goal-home-leaderboard" role="tabpanel" aria-labelledby="goal-home-leaderboard-tab">
     goal-home-leaderboard

@@ -139,6 +139,201 @@
           #myHomeGoalTabContent {
             &>.tab-pane {
 
+              &#goal-home-previous {
+
+                .show-more {
+                  margin-top: 20px;
+
+                  .btn {
+                    background: linear-gradient(180deg, #980000 0%, #4C0000 100%);
+                    border-radius: 6px;
+                    width: 100%;
+
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 18px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    min-height: 40px;
+                  }
+                }
+
+                .matchs {
+                  &__items {
+                    margin-bottom: 10px;
+                    mix-blend-mode: normal;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 6px;
+                    min-height: 112px;
+                    overflow: hidden;
+                    background: #F3F5F6;
+
+                    &__top {
+                      background: linear-gradient(270deg, #FFFFFF -14.71%, #D9D9D9 100%);
+                      background-image: url(../images/home/match-bg.svg);
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      background-size: cover;
+
+                      &__info {
+                        display: flex;
+                        place-content: flex-start;
+                        place-items: center;
+                        gap: 8px;
+
+                        &__currency {
+                          backdrop-filter: blur(4px);
+                          /* Note: backdrop-filter has minimal browser support */
+                          border-radius: 6px 0;
+                          font-weight: 700;
+                          font-size: 12px;
+                          line-height: 13px;
+                          text-align: center;
+                          color: #FFFFFF;
+                          padding: 5px 20px;
+
+                          &.success {
+                            background: #12CB59;
+                          }
+
+                          &.warning {
+                            background: #FF8A00;
+                          }
+                        }
+
+                        &__time {
+                          font-weight: 500;
+                          font-size: 12px;
+                          line-height: 13px;
+                          color: #001E28;
+                        }
+                      }
+
+                      &__vs {
+                        font-weight: 800;
+                        font-size: 18px;
+                        line-height: 20px;
+                        color: #980000;
+                        padding: 20px 10px 15px 10px;
+
+                        display: flex;
+                        place-content: space-between;
+                        place-items: center;
+                        gap: 2px;
+
+                        .btn-danger {
+                          min-width: 96px;
+
+                          &:focus {
+                            box-shadow: none;
+                          }
+
+                          &:disabled {
+                            background: #D9D9D9;
+                            color: #9D9D9D;
+                          }
+                        }
+                      }
+
+                    }
+
+                    .collapse {}
+
+                    .matchs-questions {
+                      border-radius: 0;
+                      list-style: none;
+                      padding: 0;
+                      margin-bottom: 0;
+
+                      &-item {
+                        border-radius: 0;
+                        background-color: #F3F5F6 !important;
+                        border-top: 1px solid #E1E1E1 !important;
+                        padding: 15px;
+                        display: flex;
+                        place-content: flex-start;
+                        place-items: center;
+                        width: 100%;
+                        gap: 13px;
+
+                        &__content {
+
+                          &__question {
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 13px;
+                            color: #9D9D9D;
+                            margin-bottom: 3px;
+                          }
+
+                          &__answer {
+                            font-weight: 800;
+                            font-size: 12px;
+                            line-height: 13px;
+                            color: #505050;
+                          }
+                        }
+                      }
+                    }
+
+
+                    .btn-showhide {
+                      border-top: 1px solid #D9D9D9;
+                      width: 100%;
+                      font-weight: 500;
+                      font-size: 12px;
+                      line-height: 13px;
+                      text-align: center;
+                      color: #505050;
+                      min-height: 30px;
+                      display: flex;
+                      place-content: center;
+                      place-items: center;
+                      border-radius: 0;
+
+                      .hide-answer {
+                        display: none;
+                      }
+
+                      &[aria-expanded="true"] {
+                        .show-answer {
+                          display: none
+                        }
+
+                        .hide-answer {
+                          display: initial;
+                        }
+                      }
+
+                      &:focus {
+                        box-shadow: none;
+                      }
+                    }
+
+                  }
+                }
+
+                .your-predicted {
+                  padding-top: 20px;
+                  padding-bottom: 25px;
+                  display: flex;
+                  place-content: flex-start;
+                  place-items: center;
+
+                  span {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 15px;
+                    color: #9D9D9D;
+                    margin-right: 15px;
+                    min-width: 100px;
+                  }
+                }
+
+
+
+              }
+
               &#goal-home-current {
 
                 .partner {
