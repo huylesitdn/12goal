@@ -578,6 +578,79 @@ a {
         width: 110px; }
     .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTab > .nav-item.disabled {
       flex: initial; }
+  .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-leaderboard {
+    padding-top: 20px; }
+    .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-leaderboard .score {
+      margin-top: 10px;
+      background: linear-gradient(180deg, #6C0000 0%, #580000 100%);
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+      padding: 0 8px 8px; }
+      .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-leaderboard .score .table-responsive {
+        overflow: auto;
+        height: 500px; }
+        .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-leaderboard .score .table-responsive .table {
+          margin-bottom: 0; }
+          .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-leaderboard .score .table-responsive .table > :not(:first-child) {
+            border-top: 2px solid transparent; }
+          .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-leaderboard .score .table-responsive .table thead tr th {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 13px;
+            text-align: center;
+            color: #FFFFFF;
+            padding-top: 17px;
+            padding-bottom: 12px;
+            background: linear-gradient(180deg, #6C0000 0%, #580000 100%); }
+          .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-leaderboard .score .table-responsive .table tbody {
+            background: #F3F5F6;
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.63); }
+            .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-leaderboard .score .table-responsive .table tbody tr td {
+              border-bottom-width: 0;
+              padding-top: 15px;
+              padding-bottom: 15px;
+              font-weight: 800;
+              font-size: 14px;
+              line-height: 15px;
+              text-align: center;
+              color: #9D9D9D; }
+    .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-leaderboard .rank {
+      min-height: 83px;
+      background-image: url(../images/leaderboard-rank-bg.png);
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: cover;
+      mix-blend-mode: normal;
+      backdrop-filter: blur(2px);
+      border-radius: 6px;
+      box-shadow: 0px 2px 4px rgba(55, 0, 60, 0.51);
+      display: flex;
+      place-content: flex-start;
+      place-items: center;
+      padding: 10px 20px; }
+      .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-leaderboard .rank__number {
+        width: 40%; }
+        .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-leaderboard .rank__number div {
+          font-weight: 800;
+          font-size: 38px;
+          line-height: 41px;
+          color: #FFFFFF; }
+        .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-leaderboard .rank__number span {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 17px;
+          color: #FFFFFF; }
+      .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-leaderboard .rank__total-point {
+        text-align: center;
+        width: 100%;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 22px;
+        color: #FFFFFF;
+        text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5); }
   .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-previous .show-more {
     margin-top: 20px; }
     .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-previous .show-more .btn {
@@ -600,7 +673,7 @@ a {
     background: #F3F5F6; }
     .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-previous .matchs__items__top {
       background: linear-gradient(270deg, #FFFFFF -14.71%, #D9D9D9 100%);
-      background-image: url(../images/home/match-bg.svg);
+      background-image: url(../images/home/match-bg.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
@@ -727,7 +800,7 @@ a {
     margin-top: 30px; }
     .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-current .correct__item {
       border-radius: 6px;
-      background-image: url(../images/home/correct-bg.svg);
+      background-image: url(../images/home/correct-bg.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -755,7 +828,7 @@ a {
     margin-top: 20px; }
     .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTabContent > .tab-pane#goal-home-current .match__item {
       background: linear-gradient(270deg, #FFFFFF -14.71%, #D9D9D9 100%);
-      background-image: url(../images/home/match-bg.svg);
+      background-image: url(../images/home/match-bg.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;

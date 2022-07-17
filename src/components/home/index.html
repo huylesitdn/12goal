@@ -15,12 +15,12 @@
       </button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="goal-home-previous-tab" data-bs-toggle="tab" data-bs-target="#goal-home-previous" type="button" role="tab" aria-controls="goal-home-previous" aria-selected="false">
+      <button class="nav-link" id="goal-home-previous-tab" data-bs-toggle="tab" data-bs-target="#goal-home-previous" type="button" role="tab" aria-controls="goal-home-previous" aria-selected="false">
         <span data-i18n="home_page.Previous"></span>
       </button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="goal-home-leaderboard-tab" data-bs-toggle="tab" data-bs-target="#goal-home-leaderboard" type="button" role="tab" aria-controls="goal-home-leaderboard" aria-selected="false">
+      <button class="nav-link active" id="goal-home-leaderboard-tab" data-bs-toggle="tab" data-bs-target="#goal-home-leaderboard" type="button" role="tab" aria-controls="goal-home-leaderboard" aria-selected="false">
         <span data-i18n="home_page.Leaderboard"></span>
       </button>
     </li>
@@ -37,11 +37,12 @@
     <!-- goal-home-current -->
     @@include('./goal-home-current.html')
   </div>
-  <div class="tab-pane fade show active" id="goal-home-previous" role="tabpanel" aria-labelledby="goal-home-previous-tab">
+  <div class="tab-pane fade" id="goal-home-previous" role="tabpanel" aria-labelledby="goal-home-previous-tab">
     <!-- goal-home-previous -->
     @@include('./goal-home-previous.html')
   </div>
-  <div class="tab-pane fade" id="goal-home-leaderboard" role="tabpanel" aria-labelledby="goal-home-leaderboard-tab">
-    goal-home-leaderboard
+  <div class="tab-pane fade show active" id="goal-home-leaderboard" role="tabpanel" aria-labelledby="goal-home-leaderboard-tab">
+    <!-- goal-home-leaderboard -->
+    @@include('./goal-home-leaderboard.html')
   </div>
 </div>

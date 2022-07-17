@@ -139,6 +139,115 @@
           #myHomeGoalTabContent {
             &>.tab-pane {
 
+              &#goal-home-leaderboard {
+                padding-top: 20px;
+
+                .score {
+                  margin-top: 10px;
+                  background: linear-gradient(180deg, #6C0000 0%, #580000 100%);
+                  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+                  border-radius: 6px;
+                  padding: 0 8px 8px;
+
+                  .table-responsive {
+                    overflow: auto;
+                    height: 500px;
+
+                    .table {
+                      margin-bottom: 0;
+
+                      &> :not(:first-child) {
+                        border-top: 2px solid transparent;
+                      }
+
+                      thead {
+                        tr {
+                          th {
+                            position: sticky;
+                            top: 0;
+                            z-index: 1;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 13px;
+                            text-align: center;
+                            color: #FFFFFF;
+                            padding-top: 17px;
+                            padding-bottom: 12px;
+                            background: linear-gradient(180deg, #6C0000 0%, #580000 100%);
+                          }
+                        }
+                      }
+
+                      tbody {
+                        background: #F3F5F6;
+                        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.63);
+
+                        tr {
+                          td {
+                            border-bottom-width: 0;
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+
+                            font-weight: 800;
+                            font-size: 14px;
+                            line-height: 15px;
+                            text-align: center;
+                            color: #9D9D9D;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .rank {
+                  min-height: 83px;
+                  background-image: url(../images/leaderboard-rank-bg.png);
+                  background-repeat: no-repeat;
+                  background-position: left;
+                  background-size: cover;
+
+                  mix-blend-mode: normal;
+                  backdrop-filter: blur(2px);
+                  border-radius: 6px;
+                  box-shadow: 0px 2px 4px rgba(55, 0, 60, 0.51);
+
+                  display: flex;
+                  place-content: flex-start;
+                  place-items: center;
+                  padding: 10px 20px;
+
+                  &__number {
+                    width: 40%;
+
+                    div {
+                      font-weight: 800;
+                      font-size: 38px;
+                      line-height: 41px;
+                      color: #FFFFFF;
+                    }
+
+                    span {
+                      font-weight: 700;
+                      font-size: 16px;
+                      line-height: 17px;
+                      color: #FFFFFF;
+                    }
+                  }
+
+                  &__total-point {
+                    text-align: center;
+                    width: 100%;
+                    font-weight: 800;
+                    font-size: 20px;
+                    line-height: 22px;
+                    color: #FFFFFF;
+                    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+                  }
+
+                }
+              }
+
               &#goal-home-previous {
 
                 .show-more {
@@ -170,7 +279,7 @@
 
                     &__top {
                       background: linear-gradient(270deg, #FFFFFF -14.71%, #D9D9D9 100%);
-                      background-image: url(../images/home/match-bg.svg);
+                      background-image: url(../images/home/match-bg.png);
                       background-repeat: no-repeat;
                       background-position: center;
                       background-size: cover;
@@ -365,7 +474,7 @@
 
                   &__item {
                     border-radius: 6px;
-                    background-image: url(../images/home/correct-bg.svg);
+                    background-image: url(../images/home/correct-bg.png);
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: cover;
@@ -402,7 +511,7 @@
 
                   &__item {
                     background: linear-gradient(270deg, #FFFFFF -14.71%, #D9D9D9 100%);
-                    background-image: url(../images/home/match-bg.svg);
+                    background-image: url(../images/home/match-bg.png);
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: cover;
