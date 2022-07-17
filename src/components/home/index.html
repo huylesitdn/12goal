@@ -10,7 +10,7 @@
 <div data-aos="fade-up" data-aos-delay="100">
   <ul class="nav nav-tabs nav-fill" id="myHomeGoalTab" role="tablist">
     <li class="nav-item" role="presentation">
-      <button class="nav-link" id="goal-home-current-tab" data-bs-toggle="tab" data-bs-target="#goal-home-current" type="button" role="tab" aria-controls="goal-home-current" aria-selected="true">
+      <button class="nav-link active" id="goal-home-current-tab" data-bs-toggle="tab" data-bs-target="#goal-home-current" type="button" role="tab" aria-controls="goal-home-current" aria-selected="true">
         <span data-i18n="home_page.Current"></span>
       </button>
     </li>
@@ -20,7 +20,7 @@
       </button>
     </li>
     <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="goal-home-leaderboard-tab" data-bs-toggle="tab" data-bs-target="#goal-home-leaderboard" type="button" role="tab" aria-controls="goal-home-leaderboard" aria-selected="false">
+      <button class="nav-link" id="goal-home-leaderboard-tab" data-bs-toggle="tab" data-bs-target="#goal-home-leaderboard" type="button" role="tab" aria-controls="goal-home-leaderboard" aria-selected="false">
         <span data-i18n="home_page.Leaderboard"></span>
       </button>
     </li>
@@ -33,7 +33,7 @@
 </div>
 
 <div class="tab-content" id="myHomeGoalTabContent">
-  <div class="tab-pane fade" id="goal-home-current" role="tabpanel" aria-labelledby="goal-home-current-tab">
+  <div class="tab-pane fade show active" id="goal-home-current" role="tabpanel" aria-labelledby="goal-home-current-tab">
     <!-- goal-home-current -->
     @@include('./goal-home-current.html')
   </div>
@@ -41,7 +41,7 @@
     <!-- goal-home-previous -->
     @@include('./goal-home-previous.html')
   </div>
-  <div class="tab-pane fade show active" id="goal-home-leaderboard" role="tabpanel" aria-labelledby="goal-home-leaderboard-tab">
+  <div class="tab-pane fade" id="goal-home-leaderboard" role="tabpanel" aria-labelledby="goal-home-leaderboard-tab">
     <!-- goal-home-leaderboard -->
     @@include('./goal-home-leaderboard.html')
   </div>
