@@ -40,6 +40,10 @@
         padding-top: 13px;
         width: 100%;
 
+        .error {
+          display: none !important;
+        }
+
         .btn-check {
           &:checked+.btn {
             border-color: #12CB59;

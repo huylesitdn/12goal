@@ -28,6 +28,8 @@
       .predict__content__question__answers {
         padding-top: 13px;
         width: 100%; }
+        .predict__content__question__answers .error {
+          display: none !important; }
         .predict__content__question__answers .btn-check:checked + .btn {
           border-color: #12CB59; }
           .predict__content__question__answers .btn-check:checked + .btn:after {

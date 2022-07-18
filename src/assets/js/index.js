@@ -167,12 +167,36 @@ function initialize () {
   }
 
 
+  $("#predictForm").validate({
+    rules: {
+      // answer1: "required",
+      // answer2: "required",
+      // answer3: "required",
+      // answer4: "required",
+    },
+    messages: {
+    //   amount_SGD: {
+    //     required: translator.translateForKey('deposit_page.Amount_SGD_required', _get_language),
+    //     min: translator.translateForKey('deposit_page.Amount_SGD_required_min', _get_language)
+    //   },
+    //   select_bank: translator.translateForKey('deposit_page.Please_select_one', _get_language),
+    },
+    submitHandler: function(form) {
+      console.log('==-=-', form)
+      predictConfirmModal.show()
+      // window.location.href = '/thank-you.html'
 
-  $('#predictForm').on('submit', function(e) {
-    e.preventDefault();
-    const form_data = $(this).serializeArray();
-    console.log('-=-=-form_data', form_data)
-    predictConfirmModal.show()
+      // depositSuccessModal.show()
+    }
+  });
+
+  $('#predictForm input').on('change', function() {
+    const predictForm = $("#predictForm").serializeArray();
+    if (predictForm.length === 4) {
+      $('#predictForm .btn-submit').prop('disabled', false);  
+    } else {
+      $('#predictForm .btn-submit').prop('disabled', 'disabled');
+    }
   });
 
   console.log('initialize')
