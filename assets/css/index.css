@@ -568,7 +568,7 @@ a {
           height: 2px;
           background: #FFFFFF;
           border-radius: 1px; }
-      .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTab > .nav-item > .nav-link.disabled {
+      .home__content #myHomeTabContent > .tab-pane#goal-home #myHomeGoalTab > .nav-item > .nav-link.nav-disabled {
         background: #9D9D9D;
         mix-blend-mode: normal;
         font-weight: 500;

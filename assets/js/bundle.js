@@ -166,6 +166,11 @@ function initialize () {
     var predictConfirmModal = new bootstrap.Modal(predictConfirmModalElm, {});
   }
 
+  const outOfTicketsModalElm = $("#outOfTicketsModal");
+  if (outOfTicketsModalElm.length > 0) {
+    var outOfTicketsModal = new bootstrap.Modal(outOfTicketsModalElm, {});
+  }
+
 
   $("#predictForm").validate({
     rules: {
@@ -198,6 +203,13 @@ function initialize () {
       $('#predictForm .btn-submit').prop('disabled', 'disabled');
     }
   });
+
+
+  $('#goal-home-ticket-balance-tab').on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    outOfTicketsModal.show();
+  })
 
   console.log('initialize')
 
